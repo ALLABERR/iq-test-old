@@ -34,9 +34,12 @@ android {
 }
 
 dependencies {
+    implementation(projects.ui.assets)
+    implementation(projects.ui.localization)
+    implementation(projects.ui.system)
+
     implementation(Deps.coreKtx)
     implementation(Deps.appcompat)
-    implementation(Deps.material)
     implementation(Deps.constraintLayout)
     implementation(Deps.fragment)
 }

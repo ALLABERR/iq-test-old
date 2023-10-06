@@ -31,5 +31,5 @@ android {
 }
 
 dependencies {
-    implementation(Deps.coreKtx)
+    api(Deps.material)
 }
