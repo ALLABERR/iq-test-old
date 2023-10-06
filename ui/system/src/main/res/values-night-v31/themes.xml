@@ -2,8 +2,6 @@
 <resources>
 
     <style name="Base.Theme.Iq" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowSplashScreenBackground">@color/splashscreen_background</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splashscreen_logo</item>
     </style>

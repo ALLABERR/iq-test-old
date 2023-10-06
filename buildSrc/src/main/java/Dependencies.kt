@@ -13,4 +13,5 @@ object Deps {
     val navigationFragment by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}" }
     val navigationUi by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.navigation}" }
     val bindingDelegate by lazy { "com.github.kirich1409:viewbindingpropertydelegate-noreflection:${Versions.bindingDelegate}" }
+    val lottie by lazy { "com.airbnb.android:lottie:${Versions.lottie}" }
 }

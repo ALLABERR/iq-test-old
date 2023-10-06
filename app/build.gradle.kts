@@ -44,4 +44,5 @@ dependencies {
     implementation(Deps.coreKtx)
     implementation(Deps.appcompat)
     implementation(Deps.constraintLayout)
+    implementation(Deps.lottie)
 }

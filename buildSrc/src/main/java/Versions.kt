@@ -6,4 +6,5 @@ object Versions {
     const val fragment = "1.6.1"
     const val navigation = "2.6.0"
     const val bindingDelegate = "1.5.3"
+    const val lottie = "6.1.0"
 }
