@@ -10,4 +10,7 @@ object Deps {
     val material by lazy { "com.google.android.material:material:${Versions.material}" }
     val constraintLayout by lazy { "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}" }
     val fragment by lazy { "androidx.fragment:fragment-ktx:${Versions.fragment}" }
+    val navigationFragment by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}" }
+    val navigationUi by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.navigation}" }
+    val bindingDelegate by lazy { "com.github.kirich1409:viewbindingpropertydelegate-noreflection:${Versions.bindingDelegate}" }
 }

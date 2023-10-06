@@ -1,18 +1,15 @@
 plugins {
-    id(BuildPlugins.androidApplication)
+    id(BuildPlugins.androidLibrary)
     id(BuildPlugins.kotlinAndroid)
 }
 
 android {
-    namespace = "ru.allaber.iq"
+    namespace = "ru.allaber.intro"
     compileSdk = ConfigData.compileSdk
 
     defaultConfig {
-        applicationId = "ru.allaber.iq"
         minSdk = ConfigData.minSdk
-        targetSdk = ConfigData.targetSdk
-        versionCode = ConfigData.versionCode
-        versionName = ConfigData.versionName
+        consumerProguardFiles(ConfigData.proguardRules)
     }
 
     buildTypes {
@@ -31,6 +28,9 @@ android {
     kotlinOptions {
         jvmTarget = ConfigData.jvmTarget
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -38,10 +38,9 @@ dependencies {
     implementation(projects.ui.localization)
     implementation(projects.ui.system)
     implementation(projects.core.navigation)
-    implementation(projects.feature.home)
-    implementation(projects.feature.intro)
 
     implementation(Deps.coreKtx)
     implementation(Deps.appcompat)
     implementation(Deps.constraintLayout)
+    implementation(Deps.bindingDelegate)
 }
