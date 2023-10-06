@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Iq" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/splashscreen_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splashscreen_logo</item>
+    </style>
+</resources>

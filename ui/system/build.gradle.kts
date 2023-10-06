@@ -31,5 +31,6 @@ android {
 }
 
 dependencies {
+    implementation(projects.ui.assets)
     api(Deps.material)
 }
