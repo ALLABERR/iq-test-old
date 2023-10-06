@@ -1,41 +1,42 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id(BuildPlugins.androidApplication)
+    id(BuildPlugins.kotlinAndroid)
 }
 
 android {
     namespace = "ru.allaber.iq"
-    compileSdk = 33
+    compileSdk = ConfigData.compileSdk
 
     defaultConfig {
         applicationId = "ru.allaber.iq"
-        minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = ConfigData.minSdk
+        targetSdk = ConfigData.targetSdk
+        versionCode = ConfigData.versionCode
+        versionName = ConfigData.versionName
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile(ConfigData.proguardAndroid),
+                ConfigData.proguardRules
             )
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = ConfigData.sourceCompatibility
+        targetCompatibility = ConfigData.targetCompatibility
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = ConfigData.jvmTarget
     }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation(Deps.coreKtx)
+    implementation(Deps.appcompat)
+    implementation(Deps.material)
+    implementation(Deps.constraintLayout)
+    implementation(Deps.fragment)
 }
