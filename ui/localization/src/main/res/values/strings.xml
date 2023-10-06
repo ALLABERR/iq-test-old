@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">IQ-TEST</string>
+
+    <!--Common-->
+    <string name="exit">Выход</string>
+
+    <!--HomeFragment-->
+    <string name="start_testing">Начать тестирование</string>
+    <string name="rate_application">Оценить приложение</string>
 </resources>

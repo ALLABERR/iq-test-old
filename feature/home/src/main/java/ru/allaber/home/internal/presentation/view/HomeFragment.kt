@@ -15,8 +15,13 @@ internal class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.textView.setOnClickListener {
+
+        binding.textViewStartTesting.setOnClickListener {
             launchDeeplink(IntroDeepLink())
+        }
+
+        binding.buttonExit.setOnClickListener {
+            requireActivity().finishAndRemoveTask()
         }
     }
 }
